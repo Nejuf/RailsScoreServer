@@ -78,3 +78,5 @@ group :test do
   gem 'launchy'
   gem 'shoulda-matchers'
 end
+
+ruby '1.9.3'
