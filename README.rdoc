@@ -1,9 +1,16 @@
-== Rails Score Server
+= Rails Score Server
 
 Rails: 4.0.2
+
 Ruby: 1.9.3
+
 Database: Postgresql
+
+Server: WEBrick
+
 Deployment: Heroku
+
+==About
 
 This is intended to be a basic high score server for games.  
 
