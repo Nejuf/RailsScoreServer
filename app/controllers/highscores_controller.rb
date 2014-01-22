@@ -1,6 +1,7 @@
 class HighscoresController < ApplicationController
   def index
-  	@highscores = Highscore.all
+  	@highscores = Highscore.order(score: :desc).limit(100);
+  	#TODO pagination to show more results
   	respond_to do |f|
   		f.html
   		f.xml { render xml: @highscores }

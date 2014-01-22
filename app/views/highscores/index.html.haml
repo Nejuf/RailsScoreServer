@@ -1,2 +1,14 @@
-%h1 Highscores#index
-%p Find me in app/views/highscores/index.html.haml
+.center.highscore-index
+	%h1 Highscores!
+	%table
+		%tr
+			%th Rank:
+			%th Player:
+			%th Score:
+		- @highscores.each_with_index do |highscore, index|
+			%tr
+				%td.rank= index + 1
+				%td= highscore.name
+				%td.score= highscore.score
+
+
