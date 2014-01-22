@@ -19,8 +19,6 @@ development:
   encoding: unicode
   database: RailsScoreServer_development
   pool: 5
-  username: RailsScoreServer
-  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -48,13 +46,9 @@ test:
   encoding: unicode
   database: RailsScoreServer_test
   pool: 5
-  username: RailsScoreServer
-  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: RailsScoreServer_production
   pool: 5
-  username: RailsScoreServer
-  password:
