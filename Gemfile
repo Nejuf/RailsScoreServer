@@ -45,7 +45,7 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'jquery-turbolinks'
 gem 'js-routes'
-
+gem 'rack-cors', require: 'rack/cors'
 
 #Heroku https://devcenter.heroku.com/articles/rails4
 #Heroku http://stackoverflow.com/questions/15354539/heroku-does-not-compile-files-under-assets-piplines-in-rails-4

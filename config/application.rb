@@ -25,7 +25,7 @@ module RailsScoreServer
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-        config.generators do |g|
+    config.generators do |g|
       g.test_framework :rspec,
         fixtures: true,
         view_specs: true,
@@ -35,6 +35,13 @@ module RailsScoreServer
         request_specs: true
 
       g.fixture_replacement :factory_girl, dir: "spec/factories"
+    end
+
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
     end
   end
 end
