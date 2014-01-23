@@ -30,6 +30,7 @@ class HighscoresController < ApplicationController
   def set_access_control_headers
     headers['Access-Control-Allow-Origin'] = '*'
     headers['Access-Control-Request-Method'] = 'POST, GET, OPTIONS, HEAD'
-    # headers['Access-Control-Allow-Headers'] = 'x-requested-with,Content-Type, Authorization'
+    headers['Access-Control-Allow-Headers'] = 'X-AUTH-TOKEN, X-API-VERSION, X-Requested-With, Content-Type, Accept, Origin'
+    headers['Access-Control-Max-Age'] = "1728000"
   end
 end
